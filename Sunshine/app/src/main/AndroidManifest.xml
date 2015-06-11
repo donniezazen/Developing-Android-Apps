@@ -36,6 +36,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+
+        <provider
+            android:name="com.sudhirkhanger.app.sunshine.data.WeatherProvider"
+            android:authorities="com.sudhirkhanger.app.sunshine">
+        </provider>
     </application>
 
 </manifest>
