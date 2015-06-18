@@ -1,7 +1,6 @@
 package com.sudhirkhanger.app.sunshine;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
@@ -82,13 +81,7 @@ public class DetailActivity extends ActionBarActivity {
             }
 
             if (null != mForecastStr) {
-                Cursor cursor = getActivity().getContentResolver().query(
-                        mForecastStr,
-                        null,
-                        null,
-                        null,
-                        null);
-                        ((TextView) rootView.findViewById(R.id.detail_text))
+                ((TextView) rootView.findViewById(R.id.detail_text))
                         .setText(mForecastStr);
             }
 
