@@ -83,8 +83,35 @@ public class DetailActivity extends ActionBarActivity {
             if (null != mForecastStr) {
                 ((TextView) rootView.findViewById(R.id.detail_text))
                         .setText(mForecastStr);
-            }
 
+//                Cursor cursor = getActivity().getContentResolver().query(
+//                        Uri.parse(mForecastStr),
+//                        null,
+//                        null,
+//                        null,
+//                        null
+//                );
+//
+//                String[] myarr = cursor.getColumnNames();
+//
+//                for (int i = 0; i < cursor.getColumnCount(); i++) {
+//                    ((TextView) rootView.findViewById(R.id.detail_text))
+//                            .append(myarr[i] + "\n");
+//                }
+//
+//                Log.d(getClass().toString(), "getCount: " + cursor.getCount());
+//                Log.d(getClass().toString(), "getColumnCount: " + cursor.getColumnCount());
+//                Log.d(getClass().toString(), "max temp" + cursor.getDouble(ForecastFragment.COL_WEATHER_MAX_TEMP));
+
+//                Log.d(getClass().toString(), cursor.getString(12));
+
+//                String str = Utility.formatDate(cursor.getLong(ForecastFragment.COL_WEATHER_DATE));
+
+                //              ((TextView) rootView.findViewById(R.id.detail_text))
+                //                    .setText(str);
+
+//                cursor.close();
+            }
             return rootView;
         }
 
