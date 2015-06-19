@@ -39,7 +39,9 @@
 
         <provider
             android:name="com.sudhirkhanger.app.sunshine.data.WeatherProvider"
-            android:authorities="com.sudhirkhanger.app.sunshine">
+            android:authorities="com.sudhirkhanger.app.sunshine"
+            android:enabled="true"
+            android:exported="true">
         </provider>
     </application>
 
